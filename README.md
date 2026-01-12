@@ -42,17 +42,17 @@ Layered Architecture (3-tier)
 ## 🚀 How to Run
 
 \`\`\`bash
-# 1. Clone repository
+ 1. Clone repository
 git clone [https://github.com/ChaTemtp/midterm-individual-67543210017-9]
 
-# 2. Install dependencies
-# npm install
+ 2. Install dependencies
+ npm install
 
-# 3. Run server
-# npm start
+ 3. Run server
+ npm start
 
-# 4. Test API
-# Open browser: http://localhost:3000
+ 4. Test API
+ Open browser: http://localhost:3000
 \`\`\`
 
 ## 📝 API Endpoints
@@ -66,4 +66,5 @@ git clone [https://github.com/ChaTemtp/midterm-individual-67543210017-9]
  PATCH	    /api/books/:id/borrow	   ยืมหนังสือ
  PATCH	    /api/books/:id/return	   คืนหนังสือ
  DELETE	    /api/books/:id	        ลบหนังสือ
+
 
