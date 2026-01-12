@@ -3,6 +3,8 @@
 
 <img width="246" height="761" alt="image" src="https://github.com/user-attachments/assets/daef918f-33c2-41e6-8cf1-3361c2a80098" />
 
+
+
 2️⃣ Component Diagram (เชื่อม module แบบละเอียด)
 
 
@@ -10,32 +12,4 @@
 
 
 
-3️⃣ Flow Diagram (ตัวอย่าง borrow book)
-User clicks "Borrow" button
-        |
-        v
-        
-  API call PATCH /books/:id/borrow
-        |
-        v
-
-        
-  bookRoutes -> bookController.borrowBook()
-        |
-        v
-
-  bookService.borrowBook()
-        |
-        v
-
-  bookRepository.updateStatus(id, 'borrowed')
-        |
-        v
-
-        
-     SQLite database
-        |
-        v
-
-  Response success -> Controller -> Frontend updates UI
 
