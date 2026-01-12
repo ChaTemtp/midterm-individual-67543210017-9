@@ -41,10 +41,10 @@ Layered Architecture (3-tier)
 git clone [https://github.com/ChaTemtp/midterm-individual-67543210017-9]
 
 # 2. Install dependencies
-npm install
+# npm install
 
 # 3. Run server
-npm start
+# npm start
 
 # 4. Test API
 # Open browser: http://localhost:3000
@@ -53,11 +53,11 @@ npm start
 ## 📝 API Endpoints
 [ระบุ API endpoints ทั้งหมด]
 
-Method	URL	                   Description
-GET	    /api/books	               ดึงหนังสือทั้งหมด
-GET	    /api/books/:id	    ดึงหนังสือ 1 เล่มตาม ID
-POST	/api/books	                เพิ่มหนังสือใหม่
-PUT	    /api/books/:id	        แก้ไขข้อมูลหนังสือ
-PATCH	/api/books/:id/borrow	ยืมหนังสือ
-PATCH	/api/books/:id/return	คืนหนังสือ
-DELETE	/api/books/:id	        ลบหนังสือ
+# Method	  URL	                   Description
+# GET	    /api/books	               ดึงหนังสือทั้งหมด
+# GET	    /api/books/:id	    ดึงหนังสือ 1 เล่มตาม ID
+# POST	/api/books	                เพิ่มหนังสือใหม่
+# PUT	    /api/books/:id	        แก้ไขข้อมูลหนังสือ
+# PATCH	/api/books/:id/borrow	ยืมหนังสือ
+# PATCH	/api/books/:id/return	คืนหนังสือ
+# DELETE	/api/books/:id	        ลบหนังสือ
