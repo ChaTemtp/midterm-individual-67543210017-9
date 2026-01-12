@@ -58,13 +58,26 @@ git clone [https://github.com/ChaTemtp/midterm-individual-67543210017-9]
 ## 📝 API Endpoints
 [ระบุ API endpoints ทั้งหมด]
 
-# Method	   URL	                   Description
+
  GET	      /api/books	               ดึงหนังสือทั้งหมด
+
+ 
  GET	      /api/books/:id	    ดึงหนังสือ 1 เล่มตาม ID
+
+ 
  POST	   /api/books	                เพิ่มหนังสือใหม่
+
+ 
  PUT	    /api/books/:id	           แก้ไขข้อมูลหนังสือ
+
+ 
  PATCH	    /api/books/:id/borrow	   ยืมหนังสือ
+
+ 
  PATCH	    /api/books/:id/return	   คืนหนังสือ
+
+ 
  DELETE	    /api/books/:id	        ลบหนังสือ
+
 
 
