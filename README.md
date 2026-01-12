@@ -1,0 +1,63 @@
+# Library Management System - Layered Architecture
+
+## 📋 Project Information
+- **Student Name:** [นายไตรภพ ก๋องใจ]
+- **Student ID:** [67543210017-9]
+- **Course:** ENGSE207 Software Architecture
+
+## 🏗️ Architecture Style
+Layered Architecture (3-tier)
+
+## 📂 Project Structure
+[อธิบายโครงสร้างโฟลเดอร์]
+## monolithic ##
+![alt text](image.png)
+
+## Layered ##
+![alt text](image-1.png)
+## 🎯 Refactoring Summary
+
+### ปัญหาของ Monolithic (เดิม):
+- โค้ดทั้งหมดอยู่ในไฟล์เดียว ทำให้ดูแลยาก
+- การแก้ไขฟีเจอร์หนึ่งอาจกระทบส่วนอื่นโดยไม่ตั้งใจ
+- การ scale ระบบทำได้ยาก
+
+### วิธีแก้ไขด้วย Layered Architecture:
+- - แยกโค้ดออกเป็น **Presentation / Business / Data** layer
+- Controller ทำหน้าที่รับ request และส่ง response
+- Service ประมวลผล logic และ validate
+- Repository ติดต่อฐานข้อมูล SQLite
+- Middleware จัดการ error และ response format
+
+### ประโยชน์ที่ได้รับ:
+- แก้ไขและเพิ่มฟีเจอร์ง่ายขึ้น
+- ทดสอบโค้ดแต่ละชั้นได้ง่าย
+- เข้าใจ flow ของระบบง่ายขึ้น
+ 
+## 🚀 How to Run
+
+\`\`\`bash
+# 1. Clone repository
+git clone [https://github.com/ChaTemtp/midterm-individual-67543210017-9]
+
+# 2. Install dependencies
+npm install
+
+# 3. Run server
+npm start
+
+# 4. Test API
+# Open browser: http://localhost:3000
+\`\`\`
+
+## 📝 API Endpoints
+[ระบุ API endpoints ทั้งหมด]
+
+Method	URL	                   Description
+GET	    /api/books	               ดึงหนังสือทั้งหมด
+GET	    /api/books/:id	    ดึงหนังสือ 1 เล่มตาม ID
+POST	/api/books	                เพิ่มหนังสือใหม่
+PUT	    /api/books/:id	        แก้ไขข้อมูลหนังสือ
+PATCH	/api/books/:id/borrow	ยืมหนังสือ
+PATCH	/api/books/:id/return	คืนหนังสือ
+DELETE	/api/books/:id	        ลบหนังสือ
